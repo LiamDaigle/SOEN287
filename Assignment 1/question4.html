@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #personalInfo {background-color:lightblue;border-color:rgb(221, 114, 0)}
+            #personalInfoLegend {color:rgb(221, 114, 0)}
+            #surveyQuestions {background-color: cadetblue;border-color: brown}
+            #surveyQuestionsLegend {color: brown}
+            body {background-color: beige}
+            
+        </style>
+        <title>
+            Question 4
+        </title>
+    </head>
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <td><h1>Music Lover's Survey</h1></td>
+                    <td><a href="https://www.dreamstime.com/illustration/music-notes.html"><img src = "images/music-notes-8391476.jpg" width = 100 alt="Image of musical notes"></a></td>
+                </tr>
+            </table>
+        </header>
+        <form action="thanks.html" method="post">
+            <fieldset id="personalInfo">
+                <legend id="personalInfoLegend">Music Lover's Personal Information</legend>
+                <label for="userFirstName">First Name </label>
+                <input type ="text" id="userFirstName" name="firstName">
+                <br><br>
+                <label for="userLastName">Last Name </label>
+                <input type="text" id="userLastName" name="lastName">
+                <br><br>
+                <label>Gender: </label>
+                <input type ="radio" id = "maleGender" name = "gender">Male
+                <input type ="radio" id = "femaleGender" name = "gender">Female
+                <br><br>
+                <label for="ageGroup">What age group are you from?</label>
+                <select id="ageGroup">
+                    <option>Less than 18</option>
+                    <option>18 - 30</option>
+                    <option>30 - 50</option>
+                    <option>50+</option>
+                </select>
+                <br><br>
+                <label for="userEmail">Email: </label>
+                <input type="text" id="userEmail" name="email">
+        </fieldset>
+        <fieldset id="surveyQuestions">
+            <legend id="surveyQuestionsLegend">Survey Questions</legend>
+            <p>Which type of music do you listen to? (Pick as many as apply)</p>
+            <input type="checkbox" id="bluesCheckBox" name="musicType">Blues
+            <input type="checkbox" id="classicalMusicCheckBox" name="musicType">Classical Music
+            <input type="checkbox" id="electronicMusicCheckBox" name="musictype">Electronic Music<br>
+            <input type="checkbox" id="hipHopRapCheckBox" name="musicType">Hip Hop/Rap
+            <input type="checkbox" id="popCheckBox" name="musicType">Pop (Popular Music)
+            <input type="checkbox" id="reggaeCheckBox" name="musicType">Reggae<br>
+            <input type="checkbox" id="otherCheckBox" name="musicType">Other
+            <br><br>
+            <label for="favoriteArtistsTextBox">List your 3 favorite artists/bands</label><br>
+            <input type="text" id="favoriteArtistsTextBoxOne" name="favoriteArtists">
+            <input type="text" id="favoriteArtistsTextBoxTwo" name="favoriteArtists">
+            <input type="text" id="favoriteArtistsTextBoxThree" name="favoriteArtists">
+            <br><br>
+            <label>If you were to win tickets which show would you like 2 tickets to?</label><br><br>
+            <input type="radio" id="britFloydRadio" name="showChoice">BRIT FLOYD(March 24, 2016)
+            <input type="radio" id="ironMaidenRadio" name="showChoice">IRON MAIDEN(April 1, 2016)
+            <input type="radio" id="janetJacksonRadio" name="showChoice">JANET JACKSON(June 17, 2016)
+            <input type="radio" id="adeleRadio" name="showChoice">ADELE (September 30, 2016)
+        </fieldset>
+        <br>
+        <p>Thank you for taking the time to fill out our survey!</p>
+        <input type="submit">
+        <input type="reset">
+        </form>
+    </body>
+</html>
