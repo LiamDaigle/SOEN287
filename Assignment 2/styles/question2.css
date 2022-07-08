@@ -1,0 +1,37 @@
+ul {
+    list-style-type:none;
+}
+.home-option,.news-option,.about-option,.contact-option {
+    font-family:'Times New Roman', Times, serif;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-weight:bold;
+    border:none;
+    transition: background-color 0.15s, color 0.15s;
+}
+.home-option {
+    color:white;
+    background-color:rgb(0, 167, 0);
+    padding-right:98px;
+}
+.news-option {
+    color:black;
+    background-color:rgb(216, 216, 216);
+    padding-right:102px;
+}
+.contact-option {
+    color:black;
+    background-color:rgb(216, 216, 216);
+    padding-right:87.5px;
+}
+.about-option {
+    color:black;
+    background-color:rgb(216, 216, 216);
+    padding-right:97px;
+}
+.news-option:hover,.contact-option:hover,.about-option:hover {
+    background-color:grey;
+    color:white;
+}
+
