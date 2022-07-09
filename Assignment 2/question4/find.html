@@ -23,14 +23,25 @@
     </nav>
     <div class="content">
         <form>
-            <label>Pet type: </label>
+            <label>Type of Pet:</label>
             <label>Dog</label><input type="radio" name="pet-type" id="dog">
             <label>Cat</label><input type="radio" name="pet-type" id="cat">
             <br><br>
-            <label>Breed of Dog/Cat: </label>
-            <input type="text" placeholder="Breed" id="breed-text">
+            <label>Pet Breed:</label>
+            <select name="breed">
+                <option name="breed" id="breed-black-lab">Black Lab (Dog)</option>
+                <option name="breed" id="breed-chocolate-lab">Chocolate Lab (Dog)</option>
+                <option name="breed" id="breed-golden-retriever">Golden Retriever (Dog)</option>
+                <option name="breed" id="breed-chihuahua">Chihuahua (Dog)</option>
+                <option name="breed" id="breed-basset-hound">Basset Hound (Dog)</option>
+                <option name="breed" id="breed-siamese">Siamese (Cat)</option>
+                <option name="breed" id="breed-persian">Persian (Cat)</option>
+                <option name="breed" id="breed-maine-coon">Maine Coon (Cat)</option>
+                <option name="breed" id="breed-bengal">Bengal (Cat)</option>
+                <option name="breed" id="breed-other">Does not matter</option>
+            </select>
             <br><br>
-            <label>Age of Pet: </label>
+            <label>Preffered Age: </label>
             <select name="age">
                 <option name="age" id="age-0-1">0 - 1</option>
                 <option name="age" id="age-1-2">1 - 2</option>
@@ -38,31 +49,21 @@
                 <option name="age" id="age-3-6">3 - 6</option>
                 <option name="age" id="age-6-8">6 - 8</option>
                 <option name="age" id="age-8+">8+</option>
+                <option name="age" id="age-other">Does not matter</option>
             </select>
             <br><br>
-            <label>Pet Gender: </label>
+            <label>Preffered Gender: </label>
             <input type="radio" name="gender" id="gender-male">Male
             <input type="radio" name="gender" id="gender-female">Female
+            <input type="radio" name="gender" id="gender-other">Other
             <br><br>
-            <label>Gets along with: </label>
+            <label>Gets Along With: </label>
             <input type="checkbox" name="get-along" id="get-along-dog">Dogs
-            <input type="checkbox" name="get-along" id="get-along-cat">Cats
-            <input type="checkbox" nam="get-along" id="get-along-children">Children
-            <br><br>
-            <label>About the dog:</label><br>
-            <textarea name="about-pet" id="about-pet" placeholder="Enter text here..."></textarea>
-            <br><br>
-            <label>First Name: </label>
-            <input type="text" name="name" id="name-first">
-            <label>Last Name: </label>
-            <input type="text" name="name" id="name-last">
-            <br><br>
-            <label>Current Owner's Email: </label>
-            <input type="email" name="email" id="email-owner">
+            <input type="checkbox" name="get-along" id="get-along-cat">Cat
+            <input type="checkbox" name="get-along" id="get-along-children">Children
             <br><br>
             <input type="submit" name="submit" id="submit-button">
-            <input type="reset" name = "reset" id="reset-button">
-
+            <input type="reset" name="reset" id="reset-button">
         </form>
     </div>
     <footer>

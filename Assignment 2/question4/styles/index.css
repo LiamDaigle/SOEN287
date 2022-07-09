@@ -1,29 +1,8 @@
-
-.homescreen_picture {
-
-    width:600px;
-    border-radius:120px;
-    box-shadow: 0px 5px 7px rgba(0,0,0,0.5);
-    float:right;
-}
-.homescreen_paragraph_one {
-    display:inline-block;
-    width:900px;
-    padding-top:100px;
-    text-align: center;
-    font-size: 35px;
-}
-.homescreen_paragraph_two {
-    position:absolute;
-    padding-top:150px;
-    text-align: center;
-    padding-left:10px;
-    padding-right:10px;
-    font-size: 35px;
-}
-.homescreen_title {
-    text-align: center;
-}
-.content {
-    text-align: center;
+.content img {
+    width:50%;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 40%;
+    box-shadow: 0px 2px 3px black;
 }
