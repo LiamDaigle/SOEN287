@@ -1,8 +1,27 @@
-.content img {
-    width:50%;
-    display:block;
-    margin-right:auto;
-    margin-left:auto;
-    border-radius: 40%;
-    box-shadow: 0px 2px 3px black;
+.content {
+    position:relative;
+    background-image:url(images/homescreen_photo.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin-top:-1.25%;
+    left:16.8%;
+}
+
+#home-link {
+    color:rgb(33, 33, 153);
+}
+
+.content p{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top:10%;
+    color:rgb(0, 0, 0);
+    background-color:rgba(131, 114, 136, 0.9);
+    border:solid;
+    font-size:30px;
+
+}
+.content h2 {
+    text-align: center;
 }

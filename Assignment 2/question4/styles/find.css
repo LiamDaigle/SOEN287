@@ -1,0 +1,29 @@
+#find-link {
+    color:rgb(33, 33, 153);
+}
+.content {
+    padding-left:24%;
+    padding-top:7%;
+    font-size:24px;
+    width:58%;
+    height:70%;
+    margin-left:0%;
+}
+#submit-button,#reset-button {
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:8px;
+    padding-bottom:8px;
+    background-color:#A288A6;
+    border:none;
+    border-radius:20px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    font-size:large;
+    font-weight:bold;
+    transition: background-color 0.3s, color 0.15s;
+    cursor:pointer;
+}
+#submit-button:hover,#reset-button:hover {
+    background-color:black;
+    color:#f4a261;
+}

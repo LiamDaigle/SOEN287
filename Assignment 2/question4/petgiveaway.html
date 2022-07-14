@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/petgiveaway.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" class="logo">
+        <a href="index.html"><img src="styles/images/logo.png" class="logo"></a>
         <h1>Happy Creature's Adoption Center</h1>
     </header>
     <nav>
@@ -18,11 +19,11 @@
         <a href="find.html">Find a Dog/Cat</a>
         <a href="dogcare.html">Dog Care</a>
         <a href="catcare.html">Cat care</a>
-        <a href="petgiveaway.html">Have a Pet to Give Away?</a>
+        <a href="petgiveaway.html" id="petgiveaway-link">Have a Pet to Give Away?</a>
         <a href="contact.html">Contact Us</a>
     </nav>
     <div class="content">
-        <form>
+        <form method="post">
             <label>Pet type: </label>
             <label>Dog</label><input type="radio" name="pet-type" id="dog">
             <label>Cat</label><input type="radio" name="pet-type" id="cat">
@@ -62,11 +63,11 @@
             <br><br>
             <input type="submit" name="submit" id="submit-button">
             <input type="reset" name = "reset" id="reset-button">
-
         </form>
     </div>
     <footer>
-        test
+        <a href="privacy-disclaimer.html">Privacy/Disclaimer Statement</a>
+        <p>Works in Google Chrome (Magnification at 100%)</p>
     </footer>
     
 </body>

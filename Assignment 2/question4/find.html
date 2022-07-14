@@ -6,23 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/find.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" class="logo">
+        <a href="index.html"><img src="styles/images/logo.png" class="logo"></a>
         <h1>Happy Creature's Adoption Center</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="browse.html">Browse Available Pets</a>
-        <a href="find.html">Find a Dog/Cat</a>
+        <a href="find.html" id="find-link">Find a Dog/Cat</a>
         <a href="dogcare.html">Dog Care</a>
         <a href="catcare.html">Cat care</a>
         <a href="petgiveaway.html">Have a Pet to Give Away?</a>
         <a href="contact.html">Contact Us</a>
     </nav>
     <div class="content">
-        <form>
+        <form method="post">
             <label>Type of Pet:</label>
             <label>Dog</label><input type="radio" name="pet-type" id="dog">
             <label>Cat</label><input type="radio" name="pet-type" id="cat">
@@ -67,7 +68,8 @@
         </form>
     </div>
     <footer>
-        test
+        <a href="privacy-disclaimer.html">Privacy/Disclaimer Statement</a>
+        <p>Works in Google Chrome (Magnification at 100%)</p>
     </footer>
     
 </body>
