@@ -16,15 +16,11 @@ function addNumbers(a){
         return false;
     }
 }
-var array = [1,2,3];
-console.log(addNumbers(array));
 
 function getCurrentDate(){
     var temp = new Date();
     return temp.toLocaleString();
 }
-
-console.log(getCurrentDate());
 
 function arrayToString(a){
     if(Array.isArray(a)){
@@ -48,12 +44,7 @@ function arrayToString(a){
     }
 }
 
-var strArray = ["hello","world","!"];
-var str = arrayToString(strArray);
-console.log(str);
-console.log(typeof str == 'string');
-
-function test(/**/){
+function findMaxNumber(/**/){
     var args = Array.prototype.slice.call(arguments);
 
     var max = args[0];
@@ -70,8 +61,6 @@ function test(/**/){
     }
     return max;
 }
-
-console.log(test(1,2,3,4,9,6,7));
 
 function getDigits(a){
     if(typeof a =='string'){
@@ -91,8 +80,6 @@ function getDigits(a){
     }
 }
 
-console.log(getDigits("fkdl;asjkdl1kl;agjkldsgjkl5kl;jasdfk3kas;dfjk;2kjl;dasjkf9"));
-
 function reverseString(a){
     if(typeof a == 'string'){
         var reversed = "";
@@ -106,4 +93,138 @@ function reverseString(a){
     }
 }
 
-console.log(reverseString("hello"));
+var sumButton = document.getElementById("add-numbers-button");
+
+
+sumButton.addEventListener("click",function(e){
+    e.preventDefault();
+    const container = document.querySelector(".add-numbers");
+    const previous = document.getElementById("add-numbers-result");
+    if(previous != null){
+        previous.remove();
+    }
+
+    var text = document.getElementById("add-numbers-array").value;
+    var array = new Array();
+
+    for(var i in text){
+        if(text[i] == ',')
+            continue;
+        array.push(Number.parseInt(text[i]));
+    }
+    var result = addNumbers(array);
+
+    const newElement = document.createElement("text");
+    newElement.setAttribute("id","add-numbers-result");
+    newElement.innerText = "Sum: " + result;
+    container.appendChild(newElement);
+});
+
+const dateButton = document.querySelector(".current-date-button");
+
+dateButton.addEventListener("click", function(e){
+    e.preventDefault;
+    const container = document.querySelector(".current-date");
+    const previous = document.getElementById("current-date-result");
+    if(previous != null)
+        previous.remove();
+
+    const result = getCurrentDate();
+    
+    const newElement = document.createElement("text");
+    newElement.setAttribute("id","current-date-result");
+    newElement.innerText = "Current Date: " + result;
+    container.appendChild(newElement);
+});
+
+const arrayToStringButton = document.querySelector(".array-to-string-button");
+arrayToStringButton.addEventListener("click", function(e){
+    //Allows Result to Stay on Screen
+    e.preventDefault();
+
+    //Removes Previous Result
+    const previous = document.getElementById("array-to-string-result");
+    if(previous != null)
+        previous.remove();
+
+    const container = document.querySelector(".array-to-string");
+    
+    var text = String(document.getElementById("array-to-string-array").value);
+    var array = text.split(",");
+    var result = arrayToString(array);
+
+    //Turn into an element with an id.
+    var newElement = document.createElement("text");
+    newElement.setAttribute("id","array-to-string-result");
+    newElement.innerText = "Array converted to: " + result;
+
+    container.appendChild(newElement);
+
+});
+
+const findMaxNumberButton = document.querySelector(".find-max-number-button");
+findMaxNumberButton.addEventListener("click", function(e){
+    e.preventDefault();
+
+    const previous = document.getElementById("find-max-number-result");
+    if(previous != null){
+        previous.remove();
+    }
+
+    const container = document.querySelector(".find-max-number");
+
+    var array = new Array();
+
+    for(var i = 0; i < 5; i++){
+        array[i] = Number.parseInt(Math.random() * 100);
+        console.log(array[i]);
+    }
+    
+    const result = findMaxNumber(array[0],array[1],array[2],array[3],array[4]);
+
+    document.getElementById("find-max-number-numbers").innerText = "Random Numbers: " + array.toString() + ". Max: " + result;
+});
+
+const findDigitsButton = document.querySelector(".get-digits-button");
+findDigitsButton.addEventListener("click",function(e){
+    e.preventDefault();
+    const previous = document.getElementById("get-digits-result");
+    if(previous != null){
+        previous.remove();
+    }
+
+    const container = document.querySelector(".get-digits");
+
+    var text = document.getElementById("get-digits-array").value;
+
+    const result = getDigits(text);
+
+    var newElement = document.createElement("text");
+    newElement.setAttribute("id","get-digits-result");
+    newElement.innerText = "Digits in String: "+ result;
+
+    container.appendChild(newElement);
+});
+
+const reverseStringButton = document.querySelector(".reverse-string-button");
+reverseStringButton.addEventListener("click",function(e){
+    e.preventDefault();
+
+    const previous = document.getElementById("reverse-string-result");
+    if(previous != null){
+        previous.remove();
+    }
+
+    const container = document.querySelector(".reverse-string");
+
+    const text = document.getElementById("reverse-string-array").value;
+
+    const result = reverseString(text);
+
+    var newElement = document.createElement("text");
+    newElement.setAttribute("id","reverse-string-result");
+    newElement.innerText = "Reversed String: " + result;
+
+    container.appendChild(newElement);
+});
+
