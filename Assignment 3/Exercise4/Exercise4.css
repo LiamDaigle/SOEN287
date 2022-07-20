@@ -1,0 +1,12 @@
+#image-one {
+    width:700px;
+    display:block;
+}
+#image-two,#image-three,#image-four {
+    width:700px;
+    display:none;
+}
+
+p {
+    width: 750px;
+}

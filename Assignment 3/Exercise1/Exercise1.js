@@ -110,7 +110,7 @@ sumButton.addEventListener("click",function(e){
     for(var i in text){
         if(text[i] == ',')
             continue;
-        array.push(Number.parseInt(text[i]));
+        array.push(Number.parseFloat(text[i]));
     }
     var result = addNumbers(array);
 
@@ -125,6 +125,7 @@ const dateButton = document.querySelector(".current-date-button");
 dateButton.addEventListener("click", function(e){
     e.preventDefault;
     const container = document.querySelector(".current-date");
+    
     const previous = document.getElementById("current-date-result");
     if(previous != null)
         previous.remove();
@@ -176,7 +177,7 @@ findMaxNumberButton.addEventListener("click", function(e){
     var array = new Array();
 
     for(var i = 0; i < 5; i++){
-        array[i] = Number.parseInt(Math.random() * 100);
+        array[i] = Number.parseFloat(Math.random() * 100);
         console.log(array[i]);
     }
     
