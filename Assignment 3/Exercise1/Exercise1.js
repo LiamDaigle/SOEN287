@@ -98,8 +98,10 @@ var sumButton = document.getElementById("add-numbers-button");
 
 sumButton.addEventListener("click",function(e){
     e.preventDefault();
+
     const container = document.querySelector(".add-numbers");
     const previous = document.getElementById("add-numbers-result");
+
     if(previous != null){
         previous.remove();
     }
@@ -117,6 +119,7 @@ sumButton.addEventListener("click",function(e){
     const newElement = document.createElement("text");
     newElement.setAttribute("id","add-numbers-result");
     newElement.innerText = "Sum: " + result;
+
     container.appendChild(newElement);
 });
 
