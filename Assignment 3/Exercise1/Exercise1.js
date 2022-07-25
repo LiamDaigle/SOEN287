@@ -121,6 +121,7 @@ sumButton.addEventListener("click",function(e){
     newElement.innerText = "Sum: " + result;
 
     container.appendChild(newElement);
+    document.getElementById("header").innerText = "Current Function: Sum"
 });
 
 const dateButton = document.querySelector(".current-date-button");
@@ -139,6 +140,7 @@ dateButton.addEventListener("click", function(e){
     newElement.setAttribute("id","current-date-result");
     newElement.innerText = "Current Date: " + result;
     container.appendChild(newElement);
+    document.getElementById("header").innerText = "Current Function: Date"
 });
 
 const arrayToStringButton = document.querySelector(".array-to-string-button");
@@ -163,7 +165,7 @@ arrayToStringButton.addEventListener("click", function(e){
     newElement.innerText = "Array converted to: " + result;
 
     container.appendChild(newElement);
-
+    document.getElementById("header").innerText = "Current Function: Array to String"
 });
 
 const findMaxNumberButton = document.querySelector(".find-max-number-button");
@@ -180,13 +182,14 @@ findMaxNumberButton.addEventListener("click", function(e){
     var array = new Array();
 
     for(var i = 0; i < 5; i++){
-        array[i] = Number.parseFloat(Math.random() * 100);
+        array[i] = Number.parseInt(Math.random() * 100);
         console.log(array[i]);
     }
     
     const result = findMaxNumber(array[0],array[1],array[2],array[3],array[4]);
 
     document.getElementById("find-max-number-numbers").innerText = "Random Numbers: " + array.toString() + ". Max: " + result;
+    document.getElementById("header").innerText = "Current Function: Max Number";
 });
 
 const findDigitsButton = document.querySelector(".get-digits-button");
@@ -208,6 +211,7 @@ findDigitsButton.addEventListener("click",function(e){
     newElement.innerText = "Digits in String: "+ result;
 
     container.appendChild(newElement);
+    document.getElementById("header").innerText = "Current Function: Find Digits";
 });
 
 const reverseStringButton = document.querySelector(".reverse-string-button");
@@ -230,5 +234,6 @@ reverseStringButton.addEventListener("click",function(e){
     newElement.innerText = "Reversed String: " + result;
 
     container.appendChild(newElement);
+    document.getElementById("header").innerText = "Current Function: Reverse String"
 });
 
