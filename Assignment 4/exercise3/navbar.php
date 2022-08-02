@@ -7,5 +7,6 @@
     '<a href="catcare.php">Cat care</a>',
     '<a href="petgiveaway.php">Have a Pet to Give Away?</a>',
     '<a href="contact.php">Contact Us</a>',
+    '<a href="create-account.php">Create an Account</a>',
     '</nav>';
 ?>
