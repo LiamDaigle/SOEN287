@@ -31,7 +31,7 @@
             </div>
             <input type="submit" id="submit-button", name="submit-button">
         </form>
-        <p><?php include 'scripts/login-validator.php'?></p>
+        <p><?php include 'scripts/account-validator.php'?></p>
     </div>
     
     <?php include "footer.php" ?>

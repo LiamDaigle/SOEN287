@@ -15,13 +15,13 @@
     <?php include "navbar.php"?>
 
     <div class="content">
-        <form method="post">
+        <form method="post" action="petgiveaway.php">
             <label>Pet type: </label>
-            <label>Dog</label><input type="radio" name="pet-type" id="dog">
-            <label>Cat</label><input type="radio" name="pet-type" id="cat">
+            <label>Dog</label><input type="radio" name="pet-type" id="dog" value="Dog">
+            <label>Cat</label><input type="radio" name="pet-type" id="cat" value="Cat">
             <br><br>
             <label>Breed of Dog/Cat: </label>
-            <input type="text" placeholder="Breed" id="breed-text">
+            <input type="text" placeholder="Breed" id="breed-text" name="breed">
             <br><br>
             <label>Age of Pet: </label>
             <select name="age">
@@ -34,21 +34,21 @@
             </select>
             <br><br>
             <label>Pet Gender: </label>
-            <input type="radio" name="gender" id="gender-male">Male
-            <input type="radio" name="gender" id="gender-female">Female
+            <input type="radio" name="gender" id="gender-male" value="Male">Male
+            <input type="radio" name="gender" id="gender-female" value="Female">Female
             <br><br>
             <label>Gets along with: </label>
-            <input type="checkbox" name="get-along" id="get-along-dog">Dogs
-            <input type="checkbox" name="get-along" id="get-along-cat">Cats
-            <input type="checkbox" name="get-along" id="get-along-children">Children
+            <input type="checkbox" name="get-along[]" id="get-along-dog" value="Dogs">Dogs
+            <input type="checkbox" name="get-along[]" id="get-along-cat" value="Cats">Cats
+            <input type="checkbox" name="get-along[]" id="get-along-children" value="Children">Children
             <br><br>
             <label>About the dog:</label><br>
             <textarea name="about-pet" id="about-pet" placeholder="Enter text here..."></textarea>
             <br><br>
             <label>First Name: </label>
-            <input type="text" name="name" id="name-first">
+            <input type="text" name="name-first" id="name-first">
             <label>Last Name: </label>
-            <input type="text" name="name" id="name-last">
+            <input type="text" name="name-last" id="name-last">
             <br><br>
             <label>Current Owner's Email: </label>
             <input type="email" name="email" id="email-owner">
@@ -56,11 +56,14 @@
             <input type="submit" name="submit" id="submit-button">
             <input type="reset" name = "reset" id="reset-button">
         </form>
+
+        <?php include "scripts/animal-submit.php"?>
+
     </div>
     
     <?php include "footer.php" ?>
     
     <script src="scripts/date.js"></script>
-    <script src="scripts/petgiveaway-validation.js"></script>
+    <script src="scripts/giveaway-validation.js"></script>
 </body>
 </html>

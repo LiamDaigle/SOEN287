@@ -1,9 +1,6 @@
-
-
 const submitButton = document.getElementById("submit-button");
 
 submitButton.addEventListener("click",function(e){
-    e.preventDefault();
 
     var dogType = document.getElementById("dog");
     var catType = document.getElementById("cat");
@@ -19,37 +16,41 @@ submitButton.addEventListener("click",function(e){
     var lastName = document.getElementById("name-last").value;
     var email = document.getElementById("email-owner").value;
 
-    const petValid = dogType.checked || catType.checked;
-    
+    var petValid = dogType.checked || catType.checked;
+
     if(!petValid){
+        e.preventDefault();
         alert("Please enter valid Pet Type");
     }
 
-    console.log(breedText);
-
     if(breedText == ""){
+        e.preventDefault();
         alert("Please enter valid Pet Breed");
     }
 
-    const genderType = maleType.checked || femaleType.checked;
+    var genderType = maleType.checked || femaleType.checked;
 
     if(!genderType){
+        e.preventDefault();
         alert("Please enter valid Gender Type");
     }
 
     if(aboutText == ""){
+        e.preventDefault();
         alert("Please enter valid About Dog");
     }
 
     if(firstName == ""){
+        e.preventDefault();
         alert("Please enter valid First Name");
     }
 
     if(lastName == ""){
+        e.preventDefault();
         alert("Please enter valid Last Name");
     }
-
     if(email == ""){
+        e.preventDefault();
         alert("Please enter valid Email");
-    } 
+    }
 });
