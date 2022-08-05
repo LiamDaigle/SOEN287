@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,23 +16,24 @@
     <?php include "navbar.php"?>
 
     <div class="content">
-        <form method="post">
-            <label>Type of Pet:</label>
-            <label>Dog</label><input type="radio" name="pet-type" id="dog">
-            <label>Cat</label><input type="radio" name="pet-type" id="cat">
+        <form action="browse.php" method='POST'>
+        <label>Type of Pet:</label>
+            <label>Dog</label><input type="radio" name="pet-type" id="dog" value="Dog">
+            <label>Cat</label><input type="radio" name="pet-type" id="cat" value='Cat'>
+            <label>Doesn't Matter</label><input type="radio" name="pet-type" id="other" value="Doesn't Matter">
             <br><br>
             <label>Pet Breed:</label>
             <select name="breed">
-                <option id="breed-black-lab">Black Lab (Dog)</option>
-                <option id="breed-chocolate-lab">Chocolate Lab (Dog)</option>
-                <option id="breed-golden-retriever">Golden Retriever (Dog)</option>
-                <option id="breed-chihuahua">Chihuahua (Dog)</option>
-                <option id="breed-basset-hound">Basset Hound (Dog)</option>
-                <option id="breed-siamese">Siamese (Cat)</option>
-                <option id="breed-persian">Persian (Cat)</option>
-                <option id="breed-maine-coon">Maine Coon (Cat)</option>
-                <option id="breed-bengal">Bengal (Cat)</option>
-                <option id="breed-other">Does not matter</option>
+                <option id="breed-black-lab">Black Lab(Dog)</option>
+                <option id="breed-chocolate-lab">Chocolate Lab(Dog)</option>
+                <option id="breed-golden-retriever">Golden Retriever(Dog)</option>
+                <option id="breed-chihuahua">Chihuahua(Dog)</option>
+                <option id="breed-basset-hound">Basset Hound(Dog)</option>
+                <option id="breed-siamese">Siamese(Cat)</option>
+                <option id="breed-persian">Persian(Cat)</option>
+                <option id="breed-maine-coon">Maine Coon(Cat)</option>
+                <option id="breed-bengal">Bengal(Cat)</option>
+                <option id="breed-other">Doesn't Matter</option>
             </select>
             <br><br>
             <label>Preffered Age: </label>
@@ -41,20 +44,20 @@
                 <option id="age-3-6">3 - 6</option>
                 <option id="age-6-8">6 - 8</option>
                 <option id="age-8+">8+</option>
-                <option id="age-other">Does not matter</option>
+                <option id="age-other">Doesn't Matter</option>
             </select>
             <br><br>
             <label>Preffered Gender: </label>
-            <input type="radio" name="gender" id="gender-male">Male
-            <input type="radio" name="gender" id="gender-female">Female
-            <input type="radio" name="gender" id="gender-other">Other
+            <input type="radio" name="gender" id="gender-male" value= "Male">Male
+            <input type="radio" name="gender" id="gender-female" value = "Female">Female
+            <input type="radio" name="gender" id="gender-other" value="Doesn't Matter">Doesn't Matter
             <br><br>
             <label>Gets Along With: </label>
-            <input type="checkbox" name="get-along" id="get-along-dog">Dogs
-            <input type="checkbox" name="get-along" id="get-along-cat">Cat
-            <input type="checkbox" name="get-along" id="get-along-children">Children
+            <input type="checkbox" name="get-along[]" id="get-along-dog" value ="Dogs">Dogs
+            <input type="checkbox" name="get-along[]" id="get-along-cat" value = "Cats">Cat
+            <input type="checkbox" name="get-along[]" id="get-along-children" value = "Children">Children
             <br><br>
-            <input type="submit" name="submit" id="submit-button">
+            <input type="submit" name="submit-bt" id="submit-button">
             <input type="reset" name="reset" id="reset-button">
         </form>
     </div>

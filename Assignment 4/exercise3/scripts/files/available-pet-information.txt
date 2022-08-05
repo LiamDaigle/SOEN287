@@ -1,0 +1,6 @@
+Dog,Black Lab,2,Male,Dogs Cats Children,black_lab.jpg
+Dog,Chocolate Lab,3,Male,Dogs Cats Children,chocloate_lab.jpg
+Dog,Golden Retriever,1,Female,Dogs Cats Children,golden_retriever.jpg
+Cat,Persian,3,Male,Dogs Cats Children,persian_cat.jpg
+Cat,Maine Coon,2,Female,Dogs Cats,maine_coon.jpg
+Cat,Bengal,3,Female,Cats Children,bengal_cat.png

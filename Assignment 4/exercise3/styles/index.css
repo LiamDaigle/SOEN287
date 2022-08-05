@@ -1,6 +1,6 @@
 .content {
     position:relative;
-    background-image:url(images/homescreen_photo.png);
+    background-image:url(scripts/files/images/homescreen_photo.png);
     background-position:center;
     background-size:contain;
     background-repeat:no-repeat;

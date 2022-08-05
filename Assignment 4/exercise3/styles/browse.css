@@ -1,6 +1,9 @@
 #browse-link {
     color:rgb(33, 33, 153);
 }
+table {
+    max-width:80%;
+}
 
 .content {
     width:80%;
