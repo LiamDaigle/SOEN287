@@ -35,6 +35,6 @@
     </div>
     
     <?php include "footer.php" ?>
-    
+    <script src="scripts/date.js"></script>
 </body>
 </html>

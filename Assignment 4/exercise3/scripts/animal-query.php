@@ -19,11 +19,11 @@
                 
                 if($getAlong !== " "){
                     for($i = 0 ; $i < count($getAlong); $i++){
-                        $string .= $getAlong[$i];
+                        $string .= $getAlong[$i] . " ";
 
                     }
                     //Removing the extra space at the end of the entry
-                    $string = substr($string,0,strlen($string)-1);
+                    $string = substr($string,0,strlen($string) -1);
                 }
                 else
                     $string .= "Doesn't Matter";

@@ -14,16 +14,14 @@
     <?php include "navbar.php"?>
 
     <div class="content">
-        <form method="POST" action="login.php">
-            <label>Username:</label>
-            <input type="text" placeholder = "Enter username..." name = "username">
-            <label>Password:</label>
-            <input type="password" placeholder = "Enter password..." name = "password">
-            <input type="submit" name="submit" id="submit">
-            <?php include "scripts/login-validator.php"?>
+        <?php
+            session_destroy();
+        ?>
+        <h1>Successfully Logged Out</h1>
     </div>
-   
+    
     <?php include "footer.php" ?>
+    
     <script src="scripts/date.js"></script>
 </body>
 </html>

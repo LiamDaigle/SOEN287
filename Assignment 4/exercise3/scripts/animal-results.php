@@ -42,19 +42,19 @@
             $imagePath = 'scripts/files/images/';
             
             for($i = 0; $i < count($pets);$i++){
-                $pet = explode(",",$pets[$i]);
+                $pet = explode(":",$pets[$i]);
 
-                if($type === DM || strpos($type,$pet[0]) !== false){
-                    if($breed === DM || strpos($breed,$pet[1]) !== false){
+                if($type === DM || strpos($type,$pet[5]) !== false){
+                    if($breed === DM || strpos($breed,$pet[6]) !== false){
                         
-                        $petAge = $pet[2];
+                        $petAge = $pet[7];
                         if($ageRange === DM || $petAge > $ageLesser && $petAge <= $ageGreater){
                             
                             
-                            if($gender === DM || strpos($gender,$pet[3]) !== false){
+                            if($gender === DM || strpos($gender,$pet[8]) !== false){
                                 
                                 
-                                if($getsAlong === DM || strpos($pet[4],$getsAlong) !== false ){
+                                if($getsAlong === DM || strpos($pet[9],$getsAlong) !== false ){
                                     if($count === -1){
                                         echo "<tr>";
                                         $count = 0;
@@ -65,8 +65,8 @@
                                         $count = 0;
                                     }
                                     echo '<td class="cell">';
-                                    echo '<img src="' . $imagePath . $pet[5] .'">';
-                                    echo '<p> Type: ' . $pet[0] . "<br>Breed: " .$pet[1] . "<br>Age: " . $petAge . "<br>Gender: " . $pet[3] . "<br>Gets along with " . $pet[4]. "</p>";
+                                    echo '<img src="' . $imagePath . $pet[11] .'">';
+                                    echo '<p> Type: ' . $pet[5] . "<br>Breed: " .$pet[6] . "<br>Age: " . $petAge . "<br>Gender: " . $pet[8] . "<br>Gets along with " . $pet[9]. "<br>" . $pet[10]. "</p>";
                                     echo '<button>Interested</button></td>';
                                     $count++;
                                 }

@@ -15,7 +15,7 @@
     <?php include "navbar.php"?>
 
     <div class="content">
-        <form method="post" action="petgiveaway.php">
+        <form method="post" action="petgiveaway.php" enctype ="multipart/form-data">
             <label>Pet type: </label>
             <label>Dog</label><input type="radio" name="pet-type" id="dog" value="Dog">
             <label>Cat</label><input type="radio" name="pet-type" id="cat" value="Cat">
@@ -24,14 +24,7 @@
             <input type="text" placeholder="Breed" id="breed-text" name="breed">
             <br><br>
             <label>Age of Pet: </label>
-            <select name="age">
-                <option id="age-0-1">0 - 1</option>
-                <option id="age-1-2">1 - 2</option>
-                <option id="age-2-3">2 - 3</option>
-                <option id="age-3-6">3 - 6</option>
-                <option id="age-6-8">6 - 8</option>
-                <option id="age-8+">8+</option>
-            </select>
+            <input type = "text" name="age">
             <br><br>
             <label>Pet Gender: </label>
             <input type="radio" name="gender" id="gender-male" value="Male">Male
@@ -52,6 +45,9 @@
             <br><br>
             <label>Current Owner's Email: </label>
             <input type="email" name="email" id="email-owner">
+            <br><br>
+            <label>Upload Picture of Pet: </label>
+            <input type="file" name = "picture" id = "picture">
             <br><br>
             <input type="submit" name="submit" id="submit-button">
             <input type="reset" name = "reset" id="reset-button">

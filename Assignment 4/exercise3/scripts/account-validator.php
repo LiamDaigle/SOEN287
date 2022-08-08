@@ -38,7 +38,7 @@
                         }
                     }
 
-                    if($hasOneDigit && $hasOneLetter){
+                    if($hasOneDigit && $hasOneLetter && strlen($password) >= 4){
                         //Has atleast one digit and one letter
 
                         $writeFile = fopen($loginFile,"a");
@@ -47,7 +47,7 @@
                     }
                     else{
                         //Does not have atleast one digit or one letter
-                        echo "Password Must Contain At Least One Digit and One Letter";
+                        echo "Password Must Contain At Least One Digit, One Letter and be 4 characters or longer.";
                     }
                 }
                 else{

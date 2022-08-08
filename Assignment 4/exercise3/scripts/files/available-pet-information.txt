@@ -1,6 +1,7 @@
-1:Admin:FirstName:LastName:admin@gmail.comDog:Black Lab:2:Male:Dogs Cats Children:black_lab.jpg
-2:Admin:FirstName:LastName:admin@gmail.comDog:Chocolate Lab:3:Male:Dogs Cats Children:chocloate_lab.jpg
-3:Admin:FirstName:LastName:admin@gmail.comDog:Golden Retriever:1:Female:Dogs Cats Children:golden_retriever.jpg
-4:Admin:FirstName:LastName:admin@gmail.comCat:Persian:3:Male:Dogs Cats Children:persian_cat.jpg
-5:Admin:FirstName:LastName:admin@gmail.comCat:Maine Coon:2:Female:Dogs Cats:maine_coon.jpg
-6:Admin:FirstName:LastName:admin@gmail.comCat:Bengal:3:Female:Cats Children:bengal_cat.png
+1:Admin:FirstName:LastName:admin@gmail.com:Dog:Black Lab:2:Male:Dogs Cats Children:Super sweet:black_lab.jpg
+2:Admin:FirstName:LastName:admin@gmail.com:Dog:Chocolate Lab:3:Male:Dogs Cats Children:Such a nice boy:chocloate_lab.jpg
+3:Admin:FirstName:LastName:admin@gmail.com:Dog:Golden Retriever:1:Female:Dogs Cats Children:Loves tummy rubs:golden_retriever.jpg
+4:Admin:FirstName:LastName:admin@gmail.com:Cat:Persian:3:Male:Dogs Cats Children:Very independent:persian_cat.jpg
+5:Admin:FirstName:LastName:admin@gmail.com:Cat:Maine Coon:2:Female:Dogs Cats:Needs to be pampered:maine_coon.jpg
+6:Admin:FirstName:LastName:admin@gmail.com:Cat:Bengal:3:Female:Cats Children:Super cuddly:bengal_cat.png
+7:Username:Liam:Daigle:liam.daigle@gmail.com:Dog:Husky:2:Male: :Beautiful Dog:siberian-husky-card-small.jpg
