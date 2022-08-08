@@ -11,7 +11,7 @@
     
     <?php include 'header.php'; ?>
 
-    <?php include "navbar.php"?>
+    <?php include "navbar-logout.php"?>
 
     <div class="content">
         <?php

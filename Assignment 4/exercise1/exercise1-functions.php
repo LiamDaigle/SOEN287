@@ -2,9 +2,16 @@
 
     function uppercaseFirstandLast($s){
         if(gettype($s) == 'string'){
-            $s[0] = strtoupper($s[0]);
-            $s[strlen($s) - 1] = strtoupper($s[strlen($s) - 1]);
-            return $s;
+
+            $array = explode(" ",$s);
+            $newStr = "";
+            for($i = 0; $i < count($array); $i++){
+                $current = $array[$i];
+                $current[0] = strtoupper($current[0]);
+                $current[strlen($current) - 1] = strtoupper($current[strlen($current) - 1]);
+                $newStr .= $current . " ";
+        }
+            return $newStr;
         }
         return false;
     }

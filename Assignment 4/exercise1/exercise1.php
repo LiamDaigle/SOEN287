@@ -32,7 +32,7 @@
     </h2>
     <br>
     <form method="POST">
-        <label>Sum Function:</label>
+        <label>Average/Median Function:</label>
         <input type='text' id='sum-array-id' name = 'sum-array' placeholder='Seperate numbers by commas'>
         <input type='submit' id='submit-button-sum-id' name = 'submit-button-sum'>
     </form>

@@ -5,3 +5,4 @@
 5:Admin:FirstName:LastName:admin@gmail.com:Cat:Maine Coon:2:Female:Dogs Cats:Needs to be pampered:maine_coon.jpg
 6:Admin:FirstName:LastName:admin@gmail.com:Cat:Bengal:3:Female:Cats Children:Super cuddly:bengal_cat.png
 7:Username:Liam:Daigle:liam.daigle@gmail.com:Dog:Husky:2:Male: :Beautiful Dog:siberian-husky-card-small.jpg
+8:Admin:Billie:Mays:bill@gmail.com:Dog:Chihuahua:6:Male: :He kinda smells...:download (1).jpg
